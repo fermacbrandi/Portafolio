@@ -1,39 +1,42 @@
-body{
+body {
   font-family: 'Montserrat', sans-serif;
 }
 
-h1{
+h1 {
   font-family: 'Sacramento', cursive;
 }
 
-h3{
+h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: regular;
 }
 
-h4{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  color: #f5ece1;
+  margin-top: 30px;
 }
 
-.navbar{
+.navbar {
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
+  background-color: #db7352;
 }
 
-.img-logo{
+.img-logo {
   width: 40%;
 }
 
-.img-pampas{
+.img-pampas {
   width: 100%;
 }
 
-.img-welcome{
+.img-welcome {
   width: 25%;
 }
 
-.intro{
+.intro {
   text-align: center;
   color: #f5ece1;
 }
@@ -51,9 +54,10 @@ h4{
   cursor: pointer;
 }
 
-.button1{
+.button1 {
   background-color: #f5ece1;
   color: #db7352;
+  margin-left: 45px;
 }
 
 .button1:hover {
@@ -61,9 +65,11 @@ h4{
   color: #f5ece1;
 }
 
-.button2{
+.button2 {
   background-color: #db7352;
   color: #f5ece1;
+  margin-left: 630px;
+  margin-top: 40px;
 }
 
 .button2:hover {
@@ -71,54 +77,53 @@ h4{
   color: #db7352;
 }
 
-.img-fer{
-      width: 70%;
+.img-fer {
+  width: 55%;
 }
 
-
-.fluid-container{
+.fluid-container {
   background-color: #f5ece1;
   padding: 80px;
 }
 
-.servicios{
+.servicios {
   background-color: #db7352;
   padding: 80px;
 }
 
-.name{
+.name {
   color: #b85f17;
 }
 
-.mis-servicios{
+.mis-servicios {
   color: #f5ece1;
   text-align: center;
   padding-bottom: 20px;
 }
 
-.mis-trabajos{
+.mis-trabajos {
   color: #db7352;
   text-align: center;
   padding-bottom: 20px;
 }
 
-.contact{
+.contact {
   color: #f5ece1;
 }
 
-.img-branding{
+.img-branding {
   width: 60%;
 }
 
-.img-sm{
+.img-sm {
   width: 60%;
 }
 
-.img-foto{
+.img-foto {
   width: 60%;
 }
 
-.column{
+.column {
   float: left;
   width: 33.33%;
   padding: 10px;
@@ -131,48 +136,89 @@ h4{
   clear: both;
 }
 
-.trabajos{
+.trabajos {
   background-color: #f5ece1;
   padding: 80px;
 }
 
-.img-limpis{
+.img-limpis {
   width: 60%;
 }
 
-.img-pandora{
+.img-pandora {
   width: 60%;
 }
 
-.img-package{
+.img-package {
   width: 60%;
 }
 
-.contactame{
+.contactame {
   background-color: #ebab55;
   padding: 80px;
 }
 
-.info-contacto{
+.info-contacto {
   color: white;
 }
 
-.contact-redes{
+.contact-redes {
   float: left;
   padding-left: 50px;
 }
 
-.redes{
-  width: 50%;
+.redes {
+  width: inherit;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
-.footer{
+.footer {
   background-color: #b85f17;
   padding: 5px;
 }
 
-.copyright{
+.copyright {
   text-align: center;
   color: #f5ece1;
   margin-top: 20px;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/pampas.jpg");
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.centered {
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.plasta {
+  position: relative;
+  width: 45%;
+  margin-top: 110px;
+  margin-right: 200px;
+}
+
+.nav-link {
+  padding-top: 25px;
+  color: #f5ece1;
+}
+
+.btn {
+  margin-left: 570px;
+  margin-top: 15px;
+  background-color: white;
+  color: #b85f17;
+}
+
+.presentation {
+  margin-top: 100px;
 }

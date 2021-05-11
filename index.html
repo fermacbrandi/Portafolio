@@ -12,7 +12,7 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm">
 
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -23,7 +23,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#">SERVICIOS</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item text-center">
             <a class="navbar-brand" href="#"> <img src="images/logo.png" class="img-logo" alt="Logotipo"></a>
           </li>
           <li class="nav-item">
@@ -39,25 +39,21 @@
     </nav>
   </header>
   <main>
-    <!--ESTA SECCIÓN DEJALA AL FINAL -->
-    <section>
-      <div class="">
-        <img src="images/pampas.jpg" class="img-pampas" alt="imagen pampas">
-        <img src="images/bienvenida.png" class="img-welcome" alt="plasta color">
-        <p class="intro">¡Bienvenido a mi portafolio digital! <br> Conoce mis trabajos, cuentame tu idea y ¡manos a la obra!</p>
-        <button class="button button1">CONTÁCTAME</button>
-      </div>
+    <section class="hero-image">
+      <div class="container">
+    <img src="images/bienvenida.png" alt="color" class="plasta">
+    <div class="centered"><p class="intro">¡Bienvenido a mi portafolio digital! <br> Conoce mis trabajos, cuentame tu <br> idea y ¡manos a la obra!</p>
+    <button class="button button1">CONTÁCTAME</button></div>
+  </div>
     </section>
-
-    <!--EJEMPLO DE FILAS CON COLUMNAS-->
     <section class="fluid-container">
       <div class="row">
         <div class="col-6 text-center ">
           <img class="img-fer" src="images/fernanda.png" alt="Fernanda">
         </div>
-        <div class="col-6">
-          <h3>Hola, soy</h3>
-          <h1 class="name">Fernanda</h1>
+        <div class="col-6 presentation">
+          <h3 class="d-inline">Hola, soy</h3>
+          <h1 class="name d-inline">Fernanda</h1>
           <p>¡Que gusto me da verte por aquí! Mi nombre es Fernanda Macedo Brandi y soy Diseñadora Gráfica, egresada de la Universidad Anáhuac Cancún. Me especializo en la creación de contenido para redes sociales, fotografía y branding.
             <br><br>Personalmente soy una mujer activa, creativa, cálida y muy alegre. Estas son cualidades que siempre busco plasmar en todos mis trabajos.
             Acompáñame a llevar tus ideas y conceptos a un producto de diseño como ningún otro.
@@ -68,71 +64,82 @@
 
     <section class="servicios">
       <h1 class="mis-servicios">Mis Servicios</h1>
-      <div class="row">
-        <div class="column"> <img src="images/branding.png" class="img-branding" alt="branding">
-          <h4>BRANDING</h4>
+      <div class="row text-center">
+        <div class="col-4">
+          <img src="images/branding.png" class="img-branding" alt="branding">
+            <h6>BRANDING</h4>
         </div>
-        <div class="column"> <img src="images/social-media.png" class="img-sm" alt="social media">
-          <h4>SOCIAL MEDIA</h4>
+        <div class="col-4">
+          <img src="images/social-media.png" class="img-sm" alt="social media">
+            <h6>SOCIAL MEDIA</h4>
         </div>
-        <div class="column"> <img src="images/fotografia.png" class="img-foto" alt="fotografia">
-          <h4>FOTOGRAFÍA</h4>
+        <div class="col-4">
+          <img src="images/fotografia.png" class="img-foto" alt="fotografia">
+            <h6>FOTOGRAFÍA</h4>
         </div>
       </div>
     </section>
     <section class="trabajos">
       <h1 class="mis-trabajos">Mis Trabajos</h1>
-      <div class="row">
-        <div class="column"> <img src="images/limpis.png" class="img-limpis" alt="tarjeta de presentación"> </div>
-        <div class="column"> <img src="images/pandora.png" class="img-pandora" alt="fotografía de joyería"> </div>
-        <div class="column"> <img src="images/latinspice.png" class="img-package" alt="empaque"> </div>
-        <button class="button button2">VER MÁS</button>
+      <div class="row text-center">
+        <div class="col-4">
+          <img src="images/limpis.png" class="img-limpis" alt="tarjeta de presentación">
+        </div>
+        <div class="col-4">
+          <img src="images/pandora.png" class="img-pandora" alt="fotografía de joyería">
+        </div>
+        <div class="col-4">
+          <img src="images/latinspice.png" class="img-package" alt="empaque">
+        </div>
+        <button class="button button2 text-center">VER MÁS</button>
       </div>
     </section>
     <section class="contactame">
       <h1 class="contact">Contáctame</h1>
-      <div class="row">
-        <div class="column">
-          <form class="" action="mailto: fermacbrandi@gmail.com" method="post" enctype="text/plain">
-            <div class="">
-              <input type="name" name="name" value="Escribe tu nombre aquí">
-            </div>
-            <br>
-            <div class="">
-              <select class="" name="">
-                <option value="">Servicio requerido</option>
-                <option value="">Creación de marca/Branding</option>
-                <option value="">Creación de contenido</option>
-                <option value="">Fotografía</option>
-            </div>
-            <br>
-            <br>
-            <div class="">
-              <textarea name="Contenido" rows="8" cols="80" placeholder="Cuéntame que necesitas...">
-            </textarea><br>
-              <input type="submit" name="" value="Enviar">
-            </div>
-        </div>
-        <div class="column contact-redes">
-          <div class="info-contacto">
-            <h3>INFORMACIÓN DE CONTACTO</h3>
-            <p>fermacbrandi@gmail.com</p>
-            <p>Priv. del Mar 73 B1 SM 309</p>
-            <p>998 139 8045</p>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6">
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="¿Cómo te llamas?">
+              </div>
+              <div class="form-group">
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>¿Qué servicio necesitas?</option>
+                  <option>Creación de marca/Branding</option>
+                  <option>Creación de contenido</option>
+                  <option>Fotografía</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" cols="60" placeholder="Cuéntame que necesitas"></textarea>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
           </div>
-          <div class="row">
-            <div class="column"> <img src="images/instagram.png" class="redes" alt="Instagram"> </div>
-            <div class="column"> <img src="images/facebook.png" class="redes" alt="Facebook"> </div>
-            <div class="column"> <img src="images/behance.png" class="redes" alt="Behance"> </div>
-            <div class="column"> <img src="images/linkedin.png" class="redes" alt="Linkedin"> </div>
+          <div class="col-6">
+            <div class="contact-redes">
+              <div class="info-contacto">
+                <h3>INFORMACIÓN DE CONTACTO</h3>
+                <br>
+                <p>fermacbrandi@gmail.com</p>
+                <p>Priv. del Mar 73 B1 SM 309</p>
+                <p>998 139 8045</p>
+              </div>
+              <div class="row">
+                <a class="redes" href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram"></a>
+                <a class="redes" href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
+                <a class="redes" href="https://www.behance.net/"><img src="images/behance.png" alt="Behance"></a>
+                <a class="redes" href="https://www.linkedin.com/login/es"><img src="images/linkedin.png" alt="Linkedin"></a>
+              </div>
+            </div>
           </div>
-        </div>
-        </form>
     </section>
   </main>
   <footer class="footer">
     <p class="copyright">© 2018 Fernanda Macedo Brandi.</p>
   </footer>
-
+</body>
 
 </html>
