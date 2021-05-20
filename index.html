@@ -3,34 +3,32 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Portafolio</title>
+  <link rel="shortcut icon" href="images/favicon.png">
+  <title>FMB Diseños | Portafolio Digital</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <header>
+  <header id="home">
     <nav class="navbar navbar-expand-sm">
-
-
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">CONÓCEME</a>
+            <a class="nav-link" href="#introduction">CONÓCEME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">SERVICIOS</a>
+            <a class="nav-link" href="#services">SERVICIOS</a>
           </li>
           <li class="nav-item text-center">
-            <a class="navbar-brand" href="#"> <img src="images/logo.png" class="img-logo" alt="Logotipo"></a>
+            <a class="navbar-brand" href="#home"> <img src="images/logo.png" class="img-logo" alt="Logotipo"></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">MIS TRABAJOS</a>
+            <a class="nav-link" href="#projects">MIS TRABAJOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CONTÁCTAME</a>
+            <a class="nav-link" href="#contact">CONTÁCTAME</a>
           </li>
 
         </ul>
@@ -41,12 +39,14 @@
   <main>
     <section class="hero-image">
       <div class="container">
-    <img src="images/bienvenida.png" alt="color" class="plasta">
-    <div class="centered"><p class="intro">¡Bienvenido a mi portafolio digital! <br> Conoce mis trabajos, cuentame tu <br> idea y ¡manos a la obra!</p>
-    <button class="button button1">CONTÁCTAME</button></div>
-  </div>
+        <img src="images/bienvenida.png" alt="color" class="shape">
+        <div class="centered intro">
+          <p>¡Bienvenido a mi portafolio digital! <br> Conoce mis trabajos, cuéntame tu <br> idea y ¡manos a la obra!</p>
+          <a href="#contact"><button class="button button1">CONTÁCTAME</button></a>
+        </div>
+      </div>
     </section>
-    <section class="fluid-container">
+    <section id="introduction" class="fluid-container">
       <div class="row">
         <div class="col-6 text-center ">
           <img class="img-fer" src="images/fernanda.png" alt="Fernanda">
@@ -62,25 +62,25 @@
       </div>
     </section>
 
-    <section class="servicios">
-      <h1 class="mis-servicios">Mis Servicios</h1>
+    <section id="services" class="services">
+      <h1 class="my-services">Mis Servicios</h1>
       <div class="row text-center">
         <div class="col-4">
           <img src="images/branding.png" class="img-branding" alt="branding">
-            <h6>BRANDING</h4>
+          <h6>BRANDING</h4>
         </div>
         <div class="col-4">
           <img src="images/social-media.png" class="img-sm" alt="social media">
-            <h6>SOCIAL MEDIA</h4>
+          <h6>SOCIAL MEDIA</h4>
         </div>
         <div class="col-4">
           <img src="images/fotografia.png" class="img-foto" alt="fotografia">
-            <h6>FOTOGRAFÍA</h4>
+          <h6>FOTOGRAFÍA</h4>
         </div>
       </div>
     </section>
-    <section class="trabajos">
-      <h1 class="mis-trabajos">Mis Trabajos</h1>
+    <section class="projects">
+      <h1 id="projects" class="my-projects">Mis Trabajos</h1>
       <div class="row text-center">
         <div class="col-4">
           <img src="images/limpis.png" class="img-limpis" alt="tarjeta de presentación">
@@ -91,17 +91,17 @@
         <div class="col-4">
           <img src="images/latinspice.png" class="img-package" alt="empaque">
         </div>
-        <button class="button button2 text-center">VER MÁS</button>
+        <a href="#home"><button class="button button2 text-center">VER MÁS</button></a>
       </div>
     </section>
-    <section class="contactame">
+    <section id="contact" class="contact-me">
       <h1 class="contact">Contáctame</h1>
       <div class="container-fluid">
         <div class="row">
           <div class="col-6">
-            <form>
+            <form action="mailto: fermacbrandi@gmail.com" method="post" enctype="text/plain">
               <div class="form-group">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="¿Cómo te llamas?">
+                <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="¿Cómo te llamas?">
               </div>
               <div class="form-group">
                 <select class="form-control" id="exampleFormControlSelect1">
@@ -120,7 +120,7 @@
           </div>
           <div class="col-6">
             <div class="contact-redes">
-              <div class="info-contacto">
+              <div class="contact-info">
                 <h3>INFORMACIÓN DE CONTACTO</h3>
                 <br>
                 <p>fermacbrandi@gmail.com</p>
@@ -128,10 +128,12 @@
                 <p>998 139 8045</p>
               </div>
               <div class="row">
-                <a class="redes" href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram"></a>
-                <a class="redes" href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
-                <a class="redes" href="https://www.behance.net/"><img src="images/behance.png" alt="Behance"></a>
-                <a class="redes" href="https://www.linkedin.com/login/es"><img src="images/linkedin.png" alt="Linkedin"></a>
+                <div class="col-6">
+                  <a class="social-media" href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram" style="width: 20%"></a>
+                  <a class="social-media" href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook" style="width: 20% "></a>
+                  <a class="social-media" href="https://www.behance.net/"><img src="images/behance.png" alt="Behance" style="width: 20%"></a>
+                  <a class="social-media" href="https://www.linkedin.com/login/es"><img src="images/linkedin.png" alt="Linkedin" style="width: 20%"></a>
+                </div>
               </div>
             </div>
           </div>
